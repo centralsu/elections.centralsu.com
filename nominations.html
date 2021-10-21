@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<!-- Core meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Structured data tags -->
+		<title>Nominations – Central Students’ Union Elections</title>
+		<meta name="description" content="Your one stop shop for information and updates on elections for Central Students’ Union.">
+		<meta name="author" content="Central Students’ Union">
+		<meta property="og:title" content="Nominations">
+		<meta property="og:description" content="Your one stop shop for information and updates on elections for Central Students’ Union.">
+		<meta property="og:url" content="https://elections.centralsu.com">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:image" content="https://elections.centralsu.com/structured_data/open_graph_logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Central Students’ Union Elections">
+		<link rel="canonical" href="https://elections.centralsu.com">
+		<link rel="mask-icon" href="structured_data/safari_pinned_tab.svg" color="#dd0613">
+		<meta name="apple-mobile-web-app-title" content="Elections">
+		<meta name="application-name" content="Elections">
+		<!--CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--Analytics-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QRQL60HGV"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-0QRQL60HGV');
+		</script>
+	</head>
+	<body onload="return random_name()">
+		<main>
+			<div class="container py-3">
+				<header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+					<a href="https://tickets.centralsu.com" class="d-flex align-items-center text-dark text-decoration-none">
+						<img src="images/csu-logo.svg" onerror="this.src='images/csu-logo.png'" height="52px" alt="Central Students’ Union" class="d-inline-block align-text-top me-2">
+						<span class="fs-4 fw-bold cone-icon-text">Elections</span>
+					</a>
+					<nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+						<a class="me-3 py-2 text-dark text-decoration-none fw-bold active" href="nominations">Nominations</a>
+						<a class="me-3 py-2 text-dark text-decoration-none" href="roles">Roles</a>
+						<a class="py-2 text-dark text-decoration-none" href="help">Help</a>
+					</nav>
+				</header>
+				<!--<div class="alert alert-warning" role="alert">
+					<h4 class="alert-heading">Surge testing</h4>
+					<p>A new variant of coronavirus has been found in some areas of London.</p>
+					<p>Everyone who lives in, works in, or travels through the boroughs of <a href="https://beta.lambeth.gov.uk/enhanced-coronavirus-covid-19-testing-lambeth" target="_blank" class="alert-link">Lambeth</a> or <a href="https://www.wandsworth.gov.uk/health-and-social-care/public-health/coronavirus/surge-testing" target="_blank" class="alert-link">Wandsworth</a> is strongly encouraged to take a PCR test. You should get a test even if you don’t have any symptoms.</p>
+				</div>-->
+
+				<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+					<h2 class="display-6 fw-normal">Make a nomination</h1>
+					<p class="fs-5 text-muted">Nominate yourself of a friend for an officer role and submit your manifesto.</p>
+				</div>
+
+				<div class="row g-5">
+					<div class="col-md-7 col-lg-8">
+						<form action="https://formspree.io/f/xeqvwzrj" method="post" enctype="multipart/form-data" target="_top" class="needs-validation mb-3" novalidate>
+							<div class="row g-3">
+								<h4>Candidate</h4>
+								<div class="col-6">
+									<label for="candidateName" class="form-label">Name</label>
+									<input required type="text" name="candidateName" class="form-control" id="candidateName">
+									<div class="invalid-feedback">Sorry, what’s the name?</div>
+								</div>
+								<div class="col-6">
+									<label for="candidateStuNum" class="form-label">Student number</label>
+									<input required type="text" name="candidateStuNum" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="123456" class="form-control" id="candidateStuNum">
+									<div class="invalid-feedback">What’s the six-digit student number?</div>
+								</div>
+								<div class="col-12">
+									<label for="candidateCourse" class="form-label">Course and year group</label>
+									<input required type="text" name="candidateCourse" placeholder="Technical and production management, first year" class="form-control" id="candidateCourse">
+									<div class="invalid-feedback">What’s the course and year group?</div>
+								</div>
+
+								<h4 class="mt-5">Co-candidate</h4>
+								<div class="col-6">
+									<label for="candidateTwoName" class="form-label">Name</label>
+									<input type="text" name="candidateTwoName" class="form-control" id="candidateTwoName">
+									<div class="invalid-feedback">Sorry, what’s the name?</div>
+								</div>
+								<div class="col-6">
+									<label for="candidateTwoStuNum" class="form-label">Student number</label>
+									<input type="text" name="candidateTwoStuNum" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="123456" class="form-control" id="candidateTwoStuNum">
+									<div class="invalid-feedback">What’s the six-digit student number?</div>
+								</div>
+								<div class="col-12">
+									<label for="candidateTwoCourse" class="form-label">Course and year group</label>
+									<input type="text" name="candidateTwoCourse" placeholder="Musical theatre, second year" class="form-control" id="candidateTwoCourse">
+									<div class="invalid-feedback">What’s the course and year group?</div>
+								</div>
+
+								<h4 class="mt-5">Proposer</h4>
+								<div class="col-6">
+									<label for="proposerName" class="form-label">Name</label>
+									<input required type="text" name="proposerName" class="form-control" id="proposerName">
+									<div class="invalid-feedback">Sorry, what’s the name?</div>
+								</div>
+								<div class="col-6">
+									<label for="proposerStuNum" class="form-label">Student number</label>
+									<input required type="text" name="proposerStuNum" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="123456" class="form-control" id="proposerStuNum">
+									<div class="invalid-feedback">What’s the six-digit student number?</div>
+								</div>
+								<div class="col-12">
+									<label for="proposerCourse" class="form-label">Course and year group</label>
+									<input required type="text" name="proposerCourse" placeholder="Performance arts, third year" class="form-control" id="proposerCourse">
+									<div class="invalid-feedback">What’s the course and year group?</div>
+								</div>
+
+								<hr class="my-4">
+								<div class="col-6">
+									<label for="manifestoDoc" class="form-label">Manifesto document</label>
+									<input required class="form-control" type="file" name="manifestoDoc" accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" aria-describedby="worldtourNameHelp" id="manifestoDoc">
+									<div class="form-text" id="manifestoDocHelp">Please upload a PDF or word document</div>
+									<div class="invalid-feedback">Please upload the manifesto</div>
+								</div>
+
+								<div class="col-6">
+									<label for="candidatePhoto" class="form-label">Candidate photo</label>
+									<input required class="form-control" type="file" name="candidatePhoto" accept="image/*" id="candidatePhoto">
+									<div class="invalid-feedback">Please upload the photo</div>
+								</div>
+
+								<div class="col-12">
+									<button class="btn btn-primary text-white btn-lg w-100 mt-3" name="submit" alt="Join the list">Confirm nomination</button>
+								</div>
+							</div>
+						</form>
+						<p class="col-md-12 small text-muted">By making a nomination, you declare that everything submitted above is true and correct to the best of your knowledge, that all candidates are eligible for nomination to stand as a students’ union officer as required by our constitution and the Education Act 1994, and that you agree to abide by all election regulations.</p>
+					</div>
+
+					<div class="col-md-5 col-lg-4">
+						<h4 class="mb-3">Guidance</h4>
+						<div class="mb-5">
+							<h6 class="mb-2 fw-bold">What is a co-candidate?</h2>
+							<p>If two candidates are running as a pair, they should be entered seperately on one form. If a candidate is running alone, the co-candidate section can be left blank.</p>
+						</div>
+						<div class="mb-5">
+							<h6 class="mb-2 fw-bold">What is a manifesto?</h2>
+							<p>The manifesto describes your aims for the year. Download the template, fill in your details and upload it to this form as either a PDF or word document.</p>
+						</div>
+						<div class="mb-5">
+							<h6 class="mb-2 fw-bold">What should the photo be?</h2>
+							<p>We need a photograph of the candidate (or candidates, if standing as a pair) to use while marketing the by-election.</p>
+						</div>
+					</div>
+				</div>
+
+				<footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 text-muted border-top">
+					<div class="col-md-4 d-flex align-items-center">
+						&copy; 2021 Central Students’ Union
+					</div>
+					<!--<div class="col-md-2 justify-content-end d-flex">
+						<img src="images/dominos_logo.png" alt="The Domino’s Pizza logo" height="32px">
+					</div>-->
+				</footer>
+			</div>
+		</main>
+		<!-- Random name generator -->
+		<script type="text/javascript">
+			function random_name() {
+				var names = ['Hugh Bonneville', 'Judi Dench', 'Christopher Eccleston', 'Carrie Fisher', 'Martin Freeman', 'Dawn French', 'Sonia Friedman', 'Andrew Garfield', 'Michael Grandage', 'Kit Harrington', 'Cameron Mackintosh', 'James Nesbitt', 'Graham Norton', 'Laurence Olivier', 'Harold Pinter', 'Vanessa Redgrave', 'Tony Robinson', 'Jennifer Saunders', 'Catherine Tate', 'Zoë Wanamaker'];
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('candidateName').setAttribute("placeholder", name);
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('candidateTwoName').setAttribute("placeholder", name);
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('proposerName').setAttribute("placeholder", name)
+			}
+		</script>
+		<!-- Form validation engine to disable submission with invalid field -->
+		<script>
+			(function () {
+				'use strict'
+				var forms = document.querySelectorAll('.needs-validation')
+				Array.prototype.slice.call(forms)
+					.forEach(function (form) {
+						form.addEventListener('submit', function (event) {
+							if (!form.checkValidity()) {
+								event.preventDefault()
+								event.stopPropagation()
+							}
+
+							form.classList.add('was-validated')
+						}, false)
+					})
+			})()
+		</script>
+		<!-- JS import -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</body>
+</html>

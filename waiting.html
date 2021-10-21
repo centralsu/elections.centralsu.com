@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<!-- Core meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Structured data tags -->
+		<title>Waiting list – Central Students’ Union Tickets</title>
+		<meta name="description" content="Your place to buy tickets for events from Central Students’ Union.">
+		<meta name="author" content="Central Students’ Union">
+		<meta property="og:title" content="Waiting list">
+		<meta property="og:description" content="Your place to buy tickets for events from Central Students’ Union.">
+		<meta property="og:url" content="https://tickets.centralsu.com">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:image" content="https://tickets.centralsu.com/structured_data/open_graph_logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Central Students’ Union Tickets">
+		<link rel="canonical" href="https://tickets.centralsu.com">
+		<link rel="mask-icon" href="structured_data/safari_pinned_tab.svg" color="#dd0613">
+		<meta name="apple-mobile-web-app-title" content="Tickets">
+		<meta name="application-name" content="Tickets">
+		<!--CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--Analytics-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q69JVL068Q"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-Z7H93P8557');
+		</script>
+	</head>
+	<body onload="return random_name()">
+		<main>
+			<div class="container py-3">
+				<header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+					<a href="https://tickets.centralsu.com" class="d-flex align-items-center text-dark text-decoration-none">
+						<img src="images/csu-logo.svg" onerror="this.src='images/csu-logo.png'" height="52px" alt="Central Students’ Union" class="d-inline-block align-text-top me-2">
+						<span class="fs-4 fw-bold cone-icon-text">Tickets</span>
+					</a>
+					<nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+						<a class="me-3 py-2 text-dark text-decoration-none" href="help">Help</a>
+						<a class="py-2 text-dark text-decoration-none" href="tickets">Tickets</a>
+					</nav>
+				</header>
+				<!--<div class="alert alert-warning" role="alert">
+					<h4 class="alert-heading">Surge testing</h4>
+					<p>A new variant of coronavirus has been found in some areas of London.</p>
+					<p>Everyone who lives in, works in, or travels through the boroughs of <a href="https://beta.lambeth.gov.uk/enhanced-coronavirus-covid-19-testing-lambeth" target="_blank" class="alert-link">Lambeth</a> or <a href="https://www.wandsworth.gov.uk/health-and-social-care/public-health/coronavirus/surge-testing" target="_blank" class="alert-link">Wandsworth</a> is strongly encouraged to take a PCR test. You should get a test even if you don’t have any symptoms.</p>
+				</div>-->
+
+				<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+					<h2 class="display-6 fw-normal">Waiting list</h1>
+					<p class="fs-5 text-muted">Add your name to the list and we’ll know to come to you if a ticket becomes available.</p>
+				</div>
+
+				<div class="row g-5">
+					<div class="col-md-5 col-lg-4 order-md-last">
+						<h4 class="mb-3">Add your name to the list</h4>
+						<form action="https://formspree.io/f/mnqlypvo" method="post" target="_top" class="needs-validation mb-3" novalidate>
+							<div class="row g-3">
+								<div class="col-12">
+									<label for="waitingStuNum" class="form-label">Your student number</label>
+									<input required type="text" name="waitingStuNum" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="123456" class="form-control" id="waitingStuNum">
+									<div class="invalid-feedback">What’s your six-digit student number?</div>
+									<button class="btn btn-primary text-white btn-lg w-100 mt-3" name="submit" alt="Join the list">Join the list</button>
+								</div>
+							</div>
+						</form>
+						<div class="col d-flex align-items-start">
+							<div class="text-danger flex-shrink-0 me-1">
+								<i class="bi bi-exclamation-circle-fill me-1"></i>
+							</div>
+							<div class="text-danger">Tickets are one per person and only available to current Central students.</div>
+						</div>
+					</div>
+
+					<div class="col-md-7 col-lg-8">
+						<h4 class="mb-3">About the waiting list</h4>
+						<div class="mb-5" id="whatisthelistfor">
+							<h5 class="mb-2 fw-bold">What is the list for?</h2>
+							<p class="fs-5">If you don’t manage to get a ticket, joining the waiting list means we’ll know to come to you if tickets become available. This could happen if someone returns their ticket to us, we revoke a ticket or we’re allocated more.</p>
+						</div>
+						<div class="mb-5" id="howwillyoucontactme">
+							<h5 class="mb-2 fw-bold">How will you contact me?</h2>
+							<p class="fs-5">If we have a ticket available, we’ll send an email to your Central email account. You’ll have a limited time to get back to us before we move on to someone else on the list.</p>
+						</div>
+						<div class="mb-5" id="canihavemyfriendsticket">
+							<h5 class="mb-2 fw-bold">Can I have my friend’s ticket?</h2>
+							<p class="fs-5">No, you can’t transfer tickets. If your friend doesn’t want theirs, they’ll need to <a href="help#doyouofferrefund">contact us</a> to get a refund. We’ll then offer the ticket to someone on the waiting list.</p>
+						</div>
+					</div>
+				</div>
+
+				<footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 text-muted border-top">
+					<div class="col-md-4 d-flex align-items-center">
+						&copy; 2021 Central Students’ Union
+					</div>
+					<!--<div class="col-md-2 justify-content-end d-flex">
+						<img src="images/dominos_logo.png" alt="The Domino’s Pizza logo" height="32px">
+					</div>-->
+				</footer>
+			</div>
+		</main>
+		<!-- Random name generator -->
+		<script type="text/javascript">
+			function random_name() {
+				var names = ['Hugh Bonneville', 'Judi Dench', 'Christopher Eccleston', 'Carrie Fisher', 'Martin Freeman', 'Dawn French', 'Sonia Friedman', 'Andrew Garfield', 'Michael Grandage', 'Kit Harrington', 'Cameron Mackintosh', 'James Nesbitt', 'Graham Norton', 'Laurence Olivier', 'Harold Pinter', 'Vanessa Redgrave', 'Tony Robinson', 'Jennifer Saunders', 'Catherine Tate', 'Zoë Wanamaker'];
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('ticketName').setAttribute("placeholder", name)
+			}
+		</script>
+		<!-- Form validation engine to disable submission with invalid field -->
+		<script>
+			(function () {
+				'use strict'
+				var forms = document.querySelectorAll('.needs-validation')
+				Array.prototype.slice.call(forms)
+					.forEach(function (form) {
+						form.addEventListener('submit', function (event) {
+							if (!form.checkValidity()) {
+								event.preventDefault()
+								event.stopPropagation()
+							}
+
+							form.classList.add('was-validated')
+						}, false)
+					})
+			})()
+		</script>
+		<!-- JS import -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</body>
+</html>
