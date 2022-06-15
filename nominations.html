@@ -44,7 +44,7 @@
 						<a class="me-3 py-2 text-dark text-decoration-none fw-bold active" href="nominations">Nominations</a>
 						<a class="me-3 py-2 text-dark text-decoration-none" href="roles">Roles</a>
 						<a class="me-3 py-2 text-dark text-decoration-none" href="schedule">Schedule</a>
-						<a class="me-3 py-2 text-dark text-decoration-none" href="results">Results</a>
+						<!--<a class="me-3 py-2 text-dark text-decoration-none" href="results">Results</a>-->
 						<a class="py-2 text-dark text-decoration-none" href="help">Help</a>
 					</nav>
 				</header>
@@ -55,8 +55,8 @@
 				</div>-->
 
 				<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-					<h2 class="display-5 fw-normal">Make a nomination</h1>
-					<p class="fs-5 text-muted">Nominate yourself of a friend for an officer role and submit your manifesto.</p>
+					<h2 class="display-5 fw-normal">Nominate yourself</h1>
+					<p class="fs-5 text-muted">Put yourself forward for an officer role and submit your manifesto.</p>
 				</div>
 
 				<div class="row g-5">
@@ -66,21 +66,21 @@
 								<h4>Candidate</h4>
 								<div class="col-6">
 									<label for="candidateName" class="form-label">Name</label>
-									<input required type="text" name="candidateName" class="form-control" id="candidateName">
-									<div class="invalid-feedback">Sorry, what’s the name?</div>
+									<input required type="text" spellcheck="false" name="candidateName" class="form-control" id="candidateName">
+									<div class="invalid-feedback">Sorry, what’s your name?</div>
 								</div>
 								<div class="col-6">
 									<label for="candidateStuNum" class="form-label">Student number</label>
 									<input required type="text" name="candidateStuNum" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="123456" class="form-control" id="candidateStuNum">
-									<div class="invalid-feedback">What’s the six-digit student number?</div>
+									<div class="invalid-feedback">What’s your six-digit student number?</div>
 								</div>
 								<div class="col-12">
 									<label for="candidateCourse" class="form-label">Course and year group</label>
-									<input required type="text" name="candidateCourse" placeholder="Technical and production management, first year" class="form-control" id="candidateCourse">
-									<div class="invalid-feedback">What’s the course and year group?</div>
+									<input required type="text" spellcheck="false" name="candidateCourse" placeholder="Technical and production management, first year" class="form-control" id="candidateCourse">
+									<div class="invalid-feedback">What’s your course and year group?</div>
 								</div>
 
-								<h4 class="mt-5">Co-candidate</h4>
+								<!--<h4 class="mt-5">Co-candidate</h4>
 								<div class="col-6">
 									<label for="candidateTwoName" class="form-label">Name</label>
 									<input type="text" name="candidateTwoName" class="form-control" id="candidateTwoName">
@@ -95,9 +95,9 @@
 									<label for="candidateTwoCourse" class="form-label">Course and year group</label>
 									<input type="text" name="candidateTwoCourse" placeholder="Musical theatre, second year" class="form-control" id="candidateTwoCourse">
 									<div class="invalid-feedback">What’s the course and year group?</div>
-								</div>
+								</div>-->
 
-								<h4 class="mt-5">Proposer</h4>
+								<!--<h4 class="mt-5">Proposer</h4>
 								<div class="col-6">
 									<label for="proposerName" class="form-label">Name</label>
 									<input required type="text" name="proposerName" class="form-control" id="proposerName">
@@ -112,32 +112,58 @@
 									<label for="proposerCourse" class="form-label">Course and year group</label>
 									<input required type="text" name="proposerCourse" placeholder="Performance arts, third year" class="form-control" id="proposerCourse">
 									<div class="invalid-feedback">What’s the course and year group?</div>
-								</div>
+								</div>-->
 
-								<hr class="my-4">
-								<div class="col-12">
+								<div class="col-6">
 									<label for="roleAppliedFor" class="form-label">Role nominated for</label>
 									<select required class="form-select" name="roleAppliedFor" id="roleAppliedFor">
-										<option value="">Choose a role</option>
-										<option value="activities">Activities officer</option>
-										<option value="environments">Environments officer</option>
-										<option value="lgbt">LGBT+ officer</option>
-										<option value="trans">Trans officer</option>
-										<option value="acting">Vice president for acting</option>
-										<option value="postgraduates">Vice president for postgraduates</option>
+										<option selected disabled value="">Choose a role</option>
+										<option value="lgbt">Events officer</option>
+										<option value="trans">Inclusion officer</option>
+										<option value="activities">President</option>
+										<option value="acting">Undergraduate officer</option>
+										<option value="environments">Vice-president</option>
 									</select>
+									<div class="invalid-feedback">Please choose a role</div>
 								</div>
-								<div class="col-6">
+								<!--<div class="col-6">
 									<label for="manifestoDoc" class="form-label">Manifesto document</label>
 									<input required class="form-control" type="file" name="manifestoDoc" accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" aria-describedby="worldtourNameHelp" id="manifestoDoc">
 									<div class="form-text" id="manifestoDocHelp">Please upload a PDF or word document</div>
-									<div class="invalid-feedback">Please upload the manifesto</div>
-								</div>
+									<div class="invalid-feedback">Please upload your manifesto</div>
+								</div>-->
 
 								<div class="col-6">
-									<label for="candidatePhoto" class="form-label">Candidate photo</label>
+									<label for="candidatePhoto" class="form-label">Photo</label>
 									<input required class="form-control" type="file" name="candidatePhoto" accept="image/*" id="candidatePhoto">
-									<div class="invalid-feedback">Please upload the photo</div>
+									<div class="invalid-feedback">Please upload your photo</div>
+								</div>
+
+								<hr class="my-4">
+								<h4>Manifesto</h4>
+								<div class="col-12">
+									<label for="manifestoAbout" class="form-label">About you</label>
+									<textarea required spellcheck="true" placeholder="Who are you and why would you be good for the role?" class="form-control" id="manifestoAbout" rows="5"></textarea>
+									<div class="invalid-feedback">Please tell us about yourself</div>
+									<div class="form-text"><span id="manfestoAboutWordCount">0</span> out of 100 words</div>
+								</div>
+
+								<div class="col-12">
+									<label for="manifestoGoals" class="form-label">Your goals</label>
+									<!--<textarea required spellcheck="true" placeholder="What are your three goals for the year ahead?" class="form-control" id="manifestoGoals" rows="3"></textarea>-->
+									<div class="input-group mb-1">
+										<span class="input-group-text font-monospace" id="manifestoGoal1Addon">1</span>
+										<input required spellcheck="true" placeholder="Write a guide to accessible writing" id="manifestoGoal1" type="text" class="form-control">
+									</div>
+									<div class="input-group mb-1">
+										<span class="input-group-text font-monospace" id="manifestoGoal2Addon">2</span>
+										<input required spellcheck="true" placeholder="Introduce anonymous harrassment reporting with academic registry" id="manifestoGoal2" type="text" class="form-control">
+									</div>
+									<div class="input-group mb-1">
+										<span class="input-group-text font-monospace" id="manifestoGoal3Addon">3</span>
+										<input required spellcheck="true" placeholder="More microwaves" id="manifestoGoal3" type="text" class="form-control">
+									</div>
+									<div class="form-text">Keep them clear and achievable</div>
 								</div>
 
 								<div class="col-12">
@@ -145,7 +171,7 @@
 								</div>
 							</div>
 						</form>
-						<p class="col-md-12 small text-muted">By making a nomination, you declare that everything submitted above is true and correct to the best of your knowledge, that all candidates are eligible for nomination to stand as a students’ union officer as required by our constitution and the Education Act 1994, and that you agree to abide by all election regulations.</p>
+						<p class="col-md-12 small text-muted">By making a nomination, you declare that everything submitted above is true and correct to the best of your knowledge, that you are eligible for nomination to stand as a students’ union officer as required by our constitution, bye-laws and the Education Act 1994, and that you agree to abide by all election regulations.</p>
 					</div>
 
 					<div class="col-md-5 col-lg-4">
@@ -154,30 +180,43 @@
 							<div class="text-danger flex-shrink-0 me-1">
 								<i class="bi bi-exclamation-circle-fill me-1"></i>
 							</div>
-							<div class="text-danger">Nominations will close on Monday 25 October at 5pm.</div>
+							<div class="text-danger">Nominations will close on Monday 20 June at 12pm midday.</div>
 						</div>
-						<div class="mb-5">
+						<!--<div class="mb-5">
 							<h6 class="mb-2 fw-bold">What is a co-candidate?</h2>
 							<p>If two candidates are running as a pair, they should be entered seperately on one form. If a candidate is running alone, the co-candidate section can be left blank.</p>
-						</div>
-						<div class="mb-5">
+						</div>-->
+						<!--<div class="mb-5">
 							<h6 class="mb-2 fw-bold">What is a proposer?</h2>
 							<p>Candidates need to be proposed or seconded by another student who agrees the candidate would be good for the role. Any current Central student who hasn’t opted out of the union can propose a candidate. You cannot be proposed by yourself or your co-candidate.</p>
-						</div>
-						<div class="mb-5">
+						</div>-->
+						<!--<div class="mb-5">
 							<h6 class="mb-2 fw-bold">What is a manifesto?</h2>
 							<p>The manifesto describes your aims for the year. Download <a href="docs/by-election_manifesto_form.dotx">the template</a>, fill in your details and upload it to this form as either a PDF or word document.</p>
+						</div>-->
+						<div class="mb-4">
+							<h6 class="mb-2 fw-bold">Why have the roles changed?</h2>
+							<p>We’ve spent the past few months working on a new structure for the union and listening to your feedback. The new officer roles are one part of these changes.</p>
+							<p><a href="https://rcssd.sharepoint.com/sites/Student_Handbook/SitePages/constitution-update-role-review.aspx" target="_blank" class="icon-link icon-link-fwd">Find out more about the changes<i class="bi bi-chevron-right"></i></a></p>
 						</div>
-						<div class="mb-5">
+						<div class="mb-4">
 							<h6 class="mb-2 fw-bold">What’s the photo for?</h2>
-							<p>We need a photograph of the candidate (or candidates, if standing as a pair) to use while marketing the by-election.</p>
+							<p>We need a photograph of you to use while promoting the elections.</p>
+						</div>
+						<div class="mb-4">
+							<h6 class="mb-2 fw-bold">What might make me good for a role?</h2>
+							<p>Think about the experience and skills you have that would make you successful in the role. You might have experience running events, organising a team, or representing students at course committee.</p>
+						</div>
+						<div class="mb-4">
+							<h6 class="mb-2 fw-bold">What should my goals be?</h2>
+							<p>Not just ‘represent all students and hold the school to account’ – that’s already part of the job. What changes do you want to see at Central and think you could get done in a year?</p>
 						</div>
 					</div>
 				</div>
 
 				<footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 text-muted border-top">
 					<div class="col-md-4 d-flex align-items-center">
-						&copy; 2021 Central Students’ Union
+						&copy; 2022 Central Students’ Union
 					</div>
 					<!--<div class="col-md-2 justify-content-end d-flex">
 						<img src="images/dominos_logo.png" alt="The Domino’s Pizza logo" height="32px">
@@ -196,6 +235,22 @@
 				name = names[Math.floor(Math.random() * names.length)];
 				document.getElementById('proposerName').setAttribute("placeholder", name)
 			}
+		</script>
+		<!-- Word counter -->
+		<script type="text/javascript">
+			document
+				.querySelector("#manifestoAbout")
+				.addEventListener("input", function countWord() {
+					let res = [];
+					let str = this.value.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
+					str.map((s) => {
+						let trimStr = s.trim();
+						if (trimStr.length > 0) {
+							res.push(trimStr);
+						}
+					});
+					document.querySelector("#manfestoAboutWordCount").innerText = res.length;
+				});
 		</script>
 		<!-- Form validation engine to disable submission with invalid field -->
 		<script>

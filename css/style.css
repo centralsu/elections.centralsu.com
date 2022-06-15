@@ -72,3 +72,7 @@
 .do-not-round-bottom-start-corner {
 	border-bottom-left-radius: 0rem!important;
 }
+
+.cover-placeholder {
+	text-anchor: middle;
+}
