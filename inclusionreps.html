@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<!-- Core meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Structured data tags -->
+		<title>Inclusion reps – Central Students’ Union Elections</title>
+		<meta name="description" content="Your one stop shop for information and updates on elections for Central Students’ Union.">
+		<meta name="author" content="Central Students’ Union">
+		<meta property="og:title" content="Inclusion reps">
+		<meta property="og:description" content="Your one stop shop for information and updates on elections for Central Students’ Union.">
+		<meta property="og:url" content="https://elections.centralsu.com">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:image" content="https://elections.centralsu.com/structured_data/open_graph_logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Central Students’ Union Elections">
+		<link rel="canonical" href="https://elections.centralsu.com">
+		<link rel="mask-icon" href="structured_data/safari_pinned_tab.svg" color="#dd0613">
+		<meta name="apple-mobile-web-app-title" content="Elections">
+		<meta name="application-name" content="Elections">
+		<!--CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--Analytics-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QRQL60HGV"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-0QRQL60HGV');
+		</script>
+	</head>
+	<body onload="return random_name()">
+		<main>
+			<div class="container py-3">
+				<header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+					<a href="https://elections.centralsu.com" class="d-flex align-items-center text-dark text-decoration-none">
+						<img src="images/csu-logo.svg" onerror="this.src='images/csu-logo.png'" height="52px" alt="Central Students’ Union" class="d-inline-block align-text-top me-2">
+						<span class="fs-4 fw-bold cone-icon-text">Elections</span>
+					</a>
+					<nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+						<a class="me-3 py-2 text-dark text-decoration-none" href="nominations">Nominations</a>
+						<a class="me-3 py-2 text-dark text-decoration-none" href="roles">Roles</a>
+						<a class="me-3 py-2 text-dark text-decoration-none" href="schedule">Schedule</a>
+						<!--<a class="me-3 py-2 text-dark text-decoration-none" href="results">Results</a>-->
+						<a class="py-2 text-dark text-decoration-none" href="help">Help</a>
+					</nav>
+				</header>
+				<!--<div class="alert alert-warning" role="alert">
+					<h4 class="alert-heading">Surge testing</h4>
+					<p>A new variant of coronavirus has been found in some areas of London.</p>
+					<p>Everyone who lives in, works in, or travels through the boroughs of <a href="https://beta.lambeth.gov.uk/enhanced-coronavirus-covid-19-testing-lambeth" target="_blank" class="alert-link">Lambeth</a> or <a href="https://www.wandsworth.gov.uk/health-and-social-care/public-health/coronavirus/surge-testing" target="_blank" class="alert-link">Wandsworth</a> is strongly encouraged to take a PCR test. You should get a test even if you don’t have any symptoms.</p>
+				</div>-->
+
+				<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+					<h2 class="display-5 fw-normal">Inclusion reps</h2>
+					<p class="fs-5 text-muted">We’re increasing representation on the union. Put yourself forward as an inclusion rep.</p>
+				</div>
+
+				<div class="row g-5">
+					<div class="col-md-5 col-lg-4 order-md-last">
+						<h4 class="mb-3">Nominate yourself</h4>
+						<form action="https://formspree.io/f/xqknjvlg" method="post" target="_top" class="needs-validation mb-3" novalidate>
+							<div class="row g-3">
+								<div class="col-12">
+									<label for="inclusionName" class="form-label">Name</label>
+									<input required type="text" spellcheck="false" name="inclusionName" class="form-control" id="inclusionName">
+									<div class="invalid-feedback">Sorry, what’s your name?</div>
+								</div>
+								<div class="col-12">
+									<label for="inclusionStuNum" class="form-label">Your student number</label>
+									<input required type="text" name="inclusionStuNum" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="123456" class="form-control" id="inclusionStuNum">
+									<div class="invalid-feedback">What’s your six-digit student number?</div>
+								</div>
+								<div class="col-12">
+									<label for="inclusionGroup" class="form-label">Representing students who are…</label>
+									<!--<input required type="text" spellcheck="false" name="inclusionGroup" placeholder="Technical and production management, first year" class="form-control" id="inclusionGroup">-->
+									<input required spellcheck="false" class="form-control" list="inclusionGroupList" id="inclusionGroup" placeholder="Search or enter your own…">
+									<datalist id="inclusionGroupList">
+										<option value="Black and global majority">
+										<option value="Carers">
+										<option value="Care leavers">
+										<option value="Disabled">
+										<option value="International">
+										<option value="Jewish">
+										<option value="LGBT">
+										<option value="Mature">
+										<option value="Migrants">
+										<option value="Neuro-divergent">
+										<option value="Trans">
+										<option value="Women">
+										<option value="Working class">
+									</datalist>
+									<div class="invalid-feedback">Who would you like to represent?</div>
+									<div class="form-text">You can represent anyone. They don’t have to be in the list</div>
+								</div>
+								<div class="col-12">
+									<button class="btn btn-primary text-white btn-lg w-100 mt-3" name="submit" alt="Join the list">Join the list</button>
+								</div>
+							</div>
+						</form>
+						<!--<div class="col d-flex align-items-start">
+							<div class="text-danger flex-shrink-0 me-1">
+								<i class="bi bi-exclamation-circle-fill me-1"></i>
+							</div>
+							<div class="text-danger">Tickets are one per person and only available to current Central students.</div>
+						</div>-->
+					</div>
+
+					<div class="col-md-7 col-lg-8">
+						<h4 class="mb-3">About inclusion reps</h4>
+						<div class="mb-5" id="whatisthelistfor">
+							<p class="fs-5">We’ve removed the rigid officer roles which have made it hard for some communities to feel heard. We know groups like carers, mature learners and Jewish students haven’t been properly represented in the past, so we’re making it easier for people to speak to their identity and positions to better inform the union’s work</p>
+							<p class="fs-5">We’ve spent months talking to you, gathering your thoughts and discussing different structures. Our new structure allows for more involvement from you and for a close relationship with the union. Central supports the changes we’ve made to help the union develop and become more effective at our mission – making life better for students.</p>
+							<!--<p class="fs-5">Importantly, we’ll be able to add to and adapt these roles to reflect our changing student body without needing to write a new constitution and hold an all-student vote. We’ll stop pretending that inclusion reps should be ‘held to account’ because how would you measure their success?</p>-->
+							<p class="fs-5">We think inclusion reps should be volunteers who nominate themselves, rather than being elected. Elections are a powerful symbol but often become a popularity contest. They also make it difficult to express your identity as you want, because we’d have to come up with a list of roles you could stand for, automatically excluding some groups.</p>
+							<p class="fs-5">You can find out much more about what’s changed and why on our <a href="https://ecal.uk/rrs">section of the student handbook</a>.</p>
+						</div>
+					</div>
+				</div>
+
+				<footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 text-muted border-top">
+					<div class="col-md-4 d-flex align-items-center">
+						&copy; 2022 Central Students’ Union
+					</div>
+					<!--<div class="col-md-2 justify-content-end d-flex">
+						<img src="images/dominos_logo.png" alt="The Domino’s Pizza logo" height="32px">
+					</div>-->
+				</footer>
+			</div>
+		</main>
+		<!-- Random name generator -->
+		<script type="text/javascript">
+			function random_name() {
+				var names = ['Hugh Bonneville', 'Judi Dench', 'Christopher Eccleston', 'Carrie Fisher', 'Martin Freeman', 'Dawn French', 'Sonia Friedman', 'Andrew Garfield', 'Michael Grandage', 'Kit Harrington', 'Cameron Mackintosh', 'James Nesbitt', 'Graham Norton', 'Laurence Olivier', 'Harold Pinter', 'Vanessa Redgrave', 'Tony Robinson', 'Jennifer Saunders', 'Catherine Tate', 'Zoë Wanamaker'];
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('candidateName').setAttribute("placeholder", name);
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('candidateTwoName').setAttribute("placeholder", name);
+				name = names[Math.floor(Math.random() * names.length)];
+				document.getElementById('proposerName').setAttribute("placeholder", name)
+			}
+		</script>
+		<!-- Word counter -->
+		<script type="text/javascript">
+			document
+				.querySelector("#manifestoAbout")
+				.addEventListener("input", function countWord() {
+					let res = [];
+					let str = this.value.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
+					str.map((s) => {
+						let trimStr = s.trim();
+						if (trimStr.length > 0) {
+							res.push(trimStr);
+						}
+					});
+					document.querySelector("#manfestoAboutWordCount").innerText = res.length;
+				});
+		</script>
+		<!-- Form validation engine to disable submission with invalid field -->
+		<script>
+			(function () {
+				'use strict'
+				var forms = document.querySelectorAll('.needs-validation')
+				Array.prototype.slice.call(forms)
+					.forEach(function (form) {
+						form.addEventListener('submit', function (event) {
+							if (!form.checkValidity()) {
+								event.preventDefault()
+								event.stopPropagation()
+							}
+
+							form.classList.add('was-validated')
+						}, false)
+					})
+			})()
+		</script>
+		<!-- JS import -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</body>
+</html>
