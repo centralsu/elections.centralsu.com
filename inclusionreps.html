@@ -136,28 +136,8 @@
 			function random_name() {
 				var names = ['Hugh Bonneville', 'Judi Dench', 'Christopher Eccleston', 'Carrie Fisher', 'Martin Freeman', 'Dawn French', 'Sonia Friedman', 'Andrew Garfield', 'Michael Grandage', 'Kit Harrington', 'Cameron Mackintosh', 'James Nesbitt', 'Graham Norton', 'Laurence Olivier', 'Harold Pinter', 'Vanessa Redgrave', 'Tony Robinson', 'Jennifer Saunders', 'Catherine Tate', 'Zoë Wanamaker'];
 				name = names[Math.floor(Math.random() * names.length)];
-				document.getElementById('candidateName').setAttribute("placeholder", name);
-				name = names[Math.floor(Math.random() * names.length)];
-				document.getElementById('candidateTwoName').setAttribute("placeholder", name);
-				name = names[Math.floor(Math.random() * names.length)];
-				document.getElementById('proposerName').setAttribute("placeholder", name)
+				document.getElementById('inclusionName').setAttribute("placeholder", name);
 			}
-		</script>
-		<!-- Word counter -->
-		<script type="text/javascript">
-			document
-				.querySelector("#manifestoAbout")
-				.addEventListener("input", function countWord() {
-					let res = [];
-					let str = this.value.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
-					str.map((s) => {
-						let trimStr = s.trim();
-						if (trimStr.length > 0) {
-							res.push(trimStr);
-						}
-					});
-					document.querySelector("#manfestoAboutWordCount").innerText = res.length;
-				});
 		</script>
 		<!-- Form validation engine to disable submission with invalid field -->
 		<script>
